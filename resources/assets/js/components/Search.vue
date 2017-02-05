@@ -39,16 +39,17 @@
                         index.search(this.query, (err, content) => {
                               this.results = content.hits
                         })
-                  }
+                  },
+                profile_url(slug) {
+
+                    const url = "http://localhost:3333/profile/"
+
+                    return url + slug
+
+                }
             },
              computed: {
-                   profile_url(slug) {
 
-                         const url = "http://l53-v2-social.dev/profile/"
-
-                         return url + slug
-                         
-                   }
              }
       }
 </script>
